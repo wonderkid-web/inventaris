@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+	--mainFont : 'Roboto', sans-serif;
+}
+body{
+	background: linear-gradient(225deg, rgba(16,224,243,1) 0%, rgba(133,212,135,1) 100%);
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+section{
+	font-family: var(--mainFont);
+	background: white;
+	margin-top: -15vh;
+	min-width: 270px;
+	box-sizing: border-box;
+	padding: .5rem;
+	text-align: center;
+	border-radius: 5px;
+	display: grid;
+	grid-template-rows:1fr .5fr 1fr .5fr ;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+section img{
+	margin: auto;
+	max-width: 100px;
+}
+.input{
+	margin: -15px 0 15px 0 ;
+	box-sizing: border-box;
+	padding: .5rem;
+	display: grid;
+	grid-template-rows: repeat(2, .5fr );
+}
+.input  *{
+	font-family: var(--mainFont);
+	background: #eee;
+	border: none;
+	margin: .5rem;
+	padding: 0 8px;
+	box-sizing: border-box;
+	font-weight: 600;
+
+}
+button{
+	color: white;
+	font-weight: 300;
+	font-family: var(--mainFont);
+	height: 25px;
+	margin: -15px 15px;
+	border: none;
+	text-shadow: 3px 3px rgba(0, 0, 0, .6) 15px;
+	background: rgba(133,212,135,1);
+	cursor: pointer;
+}
+section a{
+	font-size: .8rem;
+	font-family: var(--mainFont);
+	cursor: pointer;
+	margin-top: -20px;
+	text-decoration: none;
+}
+
+input:invalid {
+  border: red solid 3px;
+  animation: shake 600ms;
+}
+
+
+@keyframes shake{
+	25%{transform: translateX(4px);}
+	50%{transform: translateX(-4px);}
+	70%{transform: translateX(4px);}
+
+}
